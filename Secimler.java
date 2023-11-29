@@ -15,13 +15,13 @@ public class Secimler {
                 + "1 Manav\n" + "2 Sarkuteri\n" + "3 Market\n" + "4 Odeme\n" + "5 Cikis\n" + "Seciminiz: ");
         secim = scan.nextInt();
         if (secim == 1) {
-            Manav.urunler();
+            proje1_manav.Manav.urunler();
         } else if (secim == 2) {
-            Sarkuteri.urunler();
+            proje1_manav.Sarkuteri.urunler();
         } else if (secim == 3) {
-            Market.urunler();
+            proje1_manav.Market.urunler();
         } else if (secim == 4) {
-            Odeme.odeme();
+            proje1_manav.Odeme.odeme();
         } else if (secim == 5) {
             cikis();
         } else {

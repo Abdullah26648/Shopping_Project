@@ -1,5 +1,7 @@
 package proje1_manav;
 
+import proje1_manav.Secimler;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -17,12 +19,12 @@ public class Sarkuteri {
                 , "Yumurta", "Zeytin", "Peynir"};
         double[] fiyatArr = {200.95, 125.30, 55.40, 152.95, 40.85
                 , 65.90, 175.50, 85.40, 43.70, 32.80, 74.50};
-        PojoClass.urunListle(sarkuteriUrunler,sarkuteriFiyat,urunlerArr,fiyatArr);
+        proje1_manav.PojoClass.urunListle(sarkuteriUrunler,sarkuteriFiyat,urunlerArr,fiyatArr);
         List<String> sepet = Secimler.sepet;
         if (Secimler.secim == 2){
-            urunSecim = PojoClass.getUrunSecim(sarkuteriUrunler,sarkuteriFiyat);
+            urunSecim = proje1_manav.PojoClass.getUrunSecim(sarkuteriUrunler,sarkuteriFiyat);
             if (urunSecim > 0 && urunSecim<=sarkuteriUrunler.size()){
-                PojoClass.sepet(sarkuteriUrunler,sarkuteriFiyat,sepet,urunSecim);
+                proje1_manav.PojoClass.sepet(sarkuteriUrunler,sarkuteriFiyat,sepet,urunSecim);
                 for (int i = 0 ; i<1 ; i++){
                     System.out.println("Devam etmek istiyormusunuz ? T/F");
                     String kcevap = scan.next();
@@ -40,14 +42,14 @@ public class Sarkuteri {
                             }
                         }
                     } else if (kcevap.equalsIgnoreCase("F")){
-                        Odeme.odeme();
+                        proje1_manav.Odeme.odeme();
                     } else {
                         System.out.println("Lutfen gecerli bir deger giriniz");
                         i--;
                     }
                 }
             } else {
-                PojoClass.geri(sarkuteriUrunler,urunSecim);
+                proje1_manav.PojoClass.geri(sarkuteriUrunler,urunSecim);
             }
         }
     }

@@ -1,5 +1,8 @@
 package proje1_manav;
 
+import proje1_manav.Sarkuteri;
+import proje1_manav.Secimler;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -41,11 +44,11 @@ public class PojoClass {
                     if (cevap.equalsIgnoreCase("T")) {
                         Secimler.secim();
                     } else {
-                        Manav.urunler();
+                        proje1_manav.Manav.urunler();
                     }
                 } else {
                     System.out.println("Yanlis numara! Tekrar deneyiniz...");
-                    Manav.urunler();
+                    proje1_manav.Manav.urunler();
                 }
                 break;
             case 2:
@@ -69,11 +72,11 @@ public class PojoClass {
                     if (cevap.equalsIgnoreCase("T")) {
                         Secimler.secim();
                     } else {
-                        Market.urunler();
+                        proje1_manav.Market.urunler();
                     }
                 } else {
                     System.out.println("Yanlis numara! Tekrar deneyiniz...");
-                    Market.urunler();
+                    proje1_manav.Market.urunler();
                 }
                 break;
         }

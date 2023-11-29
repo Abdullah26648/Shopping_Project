@@ -1,5 +1,9 @@
 package proje1_manav;
 
+import proje1_manav.Odeme;
+import proje1_manav.PojoClass;
+import proje1_manav.Secimler;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

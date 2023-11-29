@@ -1,5 +1,7 @@
 package proje1_manav;
 
+import proje1_manav.Secimler;
+
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
